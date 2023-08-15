@@ -1,8 +1,8 @@
 .cart {
     background-color: rgba(255, 153, 0, 0.30);
     padding: 25px;
-    position:sticky;
-    top:80px;
+    position: sticky;
+    top: 80px;
 }
 
 .cart h5 {
@@ -28,15 +28,16 @@
     line-height: normal;
     letter-spacing: 0.085px;
 }
-.cart h6{
+
+.cart h6 {
     color: #0E161A;
 
-font-family: Lato;
-font-size: 21px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.032px;
-margin-top: 25px;
-margin-bottom: 57px;
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.032px;
+    margin-top: 25px;
+    margin-bottom: 57px;
 }

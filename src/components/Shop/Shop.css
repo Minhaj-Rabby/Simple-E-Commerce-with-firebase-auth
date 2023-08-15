@@ -1,18 +1,16 @@
-.shop-container{
+.shop-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
 
 }
 
-.products-container{
+.products-container {
     margin-top: 120px;
     margin-left: 40px;
     margin-right: 40PX;
     display: grid;
-    grid-template-columns: repeat( 3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 45px;
 }
 
-.cart-container{
-    
-}
+.cart-container {}
