@@ -5,8 +5,14 @@
 }
 
 .products-container{
-    margin: 50px;
+    margin-top: 120px;
+    margin-left: 40px;
+    margin-right: 40PX;
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
     grid-gap: 45px;
+}
+
+.cart-container{
+    background-color: aqua;
 }
