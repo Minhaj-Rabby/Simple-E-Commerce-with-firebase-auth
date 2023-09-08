@@ -1,0 +1,11 @@
+.review-container{
+    margin: 50px auto;
+}
+
+.review-cart-container{
+    position: fixed;
+    top: 80;
+    right: 0;
+
+
+}

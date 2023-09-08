@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 
+
 }
 
 .products-container {
@@ -13,4 +14,21 @@
     grid-gap: 45px;
 }
 
-.cart-container {}
+.cart-container {
+    position: sticky;
+    top: 80px;
+    height: 800px;
+}
+
+@media only screen and (max-width: 900px) {
+    .products-container {
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 45px;
+    }
+    
+    
+  }
