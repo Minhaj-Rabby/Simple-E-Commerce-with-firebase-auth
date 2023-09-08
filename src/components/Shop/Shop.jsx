@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react'
 import './Shop.css'
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
-import { addToDb, getShoppingCart } from '../../utilities/fakedb';
+import { addToDb, deleteShoppingCart, getShoppingCart } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -53,11 +56,15 @@ const Shop = () => {
         }
         else {
             exists.quantity = exists.quantity + 1;
-            const remaining=cart.filter(pd=>pd.id!==product.id)
-            newCart=[...remaining,exists];
+            const remaining = cart.filter(pd => pd.id !== product.id)
+            newCart = [...remaining, exists];
         }
         setCart(newCart);
         addToDb(product.id);
+    }
+    const handleclearFromCart = () => {
+        setCart([]);
+        deleteShoppingCart();
     }
 
 
@@ -74,7 +81,16 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}
+                    handleclearFromCart={handleclearFromCart}
+                >
+                    <Link className='proceed-link' to="/orders">
+                        <button className='btn-proceed'>
+                            Review Order
+                            <FontAwesomeIcon className='clear-icon' icon={faArrowRight} />
+                        </button>
+                    </Link>
+                </Cart>
             </div>
 
         </div>

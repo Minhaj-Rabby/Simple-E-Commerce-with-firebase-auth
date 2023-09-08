@@ -12,6 +12,7 @@ import Orders from './components/Oders/Orders.jsx';
 import Inventory from './components/Inventory/Inventory.jsx';
 import LogIn from './components/LogIn/LogIn.jsx';
 import cartProductsLoader from './Loader/cartProductsLoader.js';
+import CheckOut from './components/CheckOut/CheckOut.jsx';
 
 const router=createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router=createBrowserRouter([
       {
         path: 'login',
         element: <LogIn></LogIn>
+      },
+      {
+        path: 'checkout',
+        element: <CheckOut></CheckOut>
       },
 
 

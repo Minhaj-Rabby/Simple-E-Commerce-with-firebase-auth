@@ -42,3 +42,25 @@
     margin-top: 25px;
     margin-bottom: 57px;
 }
+
+.btn-clear-cart {
+    display: flex;
+    justify-content: center;
+    width: 232px;
+    height: 48px;
+    flex-shrink: 0;
+    margin: 10px auto;
+    align-items: center;
+    border-radius: 4px;
+    background: #FF3030;
+    color: white;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.085px;
+}
+.clear-icon{
+    margin-left: 4px;
+}
