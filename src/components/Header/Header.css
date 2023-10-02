@@ -20,6 +20,15 @@ nav.header a {
 nav.header a:hover {
     color: orange;
 }
+nav.header a, .user-name {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+nav.header a:hover, .user-name:hover{
+    color: orange;
+}
 
 nav img {
     width: 140px;

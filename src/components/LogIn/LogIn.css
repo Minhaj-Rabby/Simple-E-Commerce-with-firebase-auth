@@ -1,0 +1,92 @@
+.form-container {
+    width: 500px;
+    height: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+    padding-left: 50px;
+    box-shadow: -15px 15px 1px #FFE0B3
+}
+
+.form-container p {
+    /* color: #2A414F; */
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.038px;
+    text-align: center  ;
+}
+.form-container a {
+    color: #F90;
+/* Body 2 */
+font-family: Lato;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.038px;
+text-decoration: none;
+margin-left: 2px;
+}
+
+.form-title {
+    color: #2A414F;
+     font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.088px;
+    text-align: center;
+}
+
+.form-control label {
+    display: block;
+    color: #2A414F;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.026px;
+    margin-bottom: 10px;
+}
+
+.form-control input {
+    width: 415px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #95A0A7;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control .btn-submit {
+    width: 430px;
+    height: 55px;
+    border-radius: 5px;
+    background: rgba(255, 153, 0, 0.30);
+    margin-top: 20px;
+    color: #0E161A;
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.032px;
+
+}
+
+.btn-submit:hover {
+    background: rgba(255, 153, 0, 0.60);
+
+}
+
+.text-error{ 
+    color: red;
+}
